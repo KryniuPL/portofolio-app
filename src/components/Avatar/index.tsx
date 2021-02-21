@@ -1,9 +1,9 @@
 import * as React from 'react';
-import {StyledAvatar} from "../Sidebar/styled";
+import { StyledAvatar } from "../Sidebar/styled";
 import me from "./me.png";
 import {makeStyles} from "@material-ui/core/styles";
 import { AvatarWrapper } from './styled';
-import {theme} from "../../index";
+import { theme } from "../../index";
 
 const useStyles = makeStyles(() => ({
     root: {
@@ -19,7 +19,7 @@ const useStyles = makeStyles(() => ({
     },
 }));
 
-export const Avatar = () => {
+export const Avatar: React.FC = () => {
     const classes = useStyles();
 
     return (

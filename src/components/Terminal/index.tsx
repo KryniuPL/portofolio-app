@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { TerminalWrapper } from './styled';
 
-export const Terminal = () => (
+export const Terminal: React.FC = () => (
     <TerminalWrapper>
         <div id="termynal" data-termynal data-ty-startdelay="600">
             <span data-ty="input">Hi! I'm Krzysztof</span>
