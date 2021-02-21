@@ -2,7 +2,9 @@ import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { PortofolioApp } from './containers/PortofolioApp';
 import {ThemeProvider} from "styled-components";
-
+import {
+    BrowserRouter as Router,
+} from "react-router-dom";
 
 export const theme = {
     colors: {
@@ -15,9 +17,11 @@ export const theme = {
 
 ReactDOM.render(
   <React.StrictMode>
-      <ThemeProvider theme={theme}>
-          <PortofolioApp />
-      </ThemeProvider>
+      <Router>
+          <ThemeProvider theme={theme}>
+              <PortofolioApp />
+          </ThemeProvider>
+      </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

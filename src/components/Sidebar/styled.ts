@@ -9,6 +9,7 @@ export const StyledWrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  text-transform: uppercase;
 `;
 
 export const StyledAvatar = styled(Avatar)({
@@ -27,4 +28,34 @@ export const Title = styled.p`
   font-size: 16px;
   font-weight: 300;
   margin: 0;
+`;
+
+export const StyledList = styled.ul`
+  list-style: none;
+  padding: 0;
+`;
+
+export const StyledListElement = styled.li`
+  padding-top: 12px;
+  a {
+    color: ${({ theme }) => theme.colors.green};;
+    text-decoration-line: none;
+    :hover {
+      color: white;
+      i {
+        display: inline-block;
+      }
+    }
+    i {
+      display: none;
+    }
+  }
+`
+export const ArrowIcon = styled.i`
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 `;
