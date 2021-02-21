@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 
-const strongDark = `#181818`;
 
 export const PortofolioWrapper = styled.div`
-  background: ${strongDark};
+  background: ${({ theme }) => theme.colors.darkerGrey};
   position: fixed;
   bottom: 0;
   right: 0;
@@ -15,6 +14,6 @@ export const PortofolioWrapper = styled.div`
 `;
 
 export const VerticalSeparator = styled.div`
-  border-left: 3px solid #1db954;
+  border-left: 3px solid ${({ theme }) => theme.colors.green};
   height: 100%;
 `;
